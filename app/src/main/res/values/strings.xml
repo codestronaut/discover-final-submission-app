@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Discover</string>
+    <string name="app_title">discover.</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">Tv Shows</string>
+    <string name="favorites">Favorites</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_date">Date</string>
+    <string name="dummy_rating">3.5</string>
+    <string name="dummy_popularity">123456</string>
+    <string name="dummy_title">Dark Phoenix</string>
+    <string name="genres">Genres</string>
+    <string name="dummy_genres">Action, Adventure</string>
+    <string name="rating">Rating</string>
+    <string name="dummy_language">EN</string>
+    <string name="popularity">Popularity</string>
+    <string name="voted">Voted</string>
+    <string name="dummy_voted">1000</string>
+    <string name="overview">Overview</string>
+    <string name="dummy_overview">Lorem ipsum</string>
+    <string name="trailers">Trailers</string>
+    <string name="movie_added_info">Movie added to favorite</string>
+    <string name="tv_added_info">Tv show added to favorite</string>
+    <string name="movie_removed_info">Movie removed from favorite</string>
+    <string name="tv_removed_info">Tv show removed from favorite</string>
+</resources>

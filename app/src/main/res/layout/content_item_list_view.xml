@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_item_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/tiny_margin"
+    android:layout_marginEnd="@dimen/tiny_margin"
+    android:backgroundTint="@color/colorPrimary"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/small_margin"
+    app:cardElevation="@dimen/tiny_margin"
+    app:cardMaxElevation="@dimen/tiny_margin"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/poster_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="@dimen/tiny_margin"
+            android:layout_marginTop="@dimen/tiny_margin"
+            android:layout_marginBottom="@dimen/tiny_margin"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="@dimen/tiny_margin"
+            tools:src="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:fontFamily="@font/product_sans_regular"
+            android:textColor="@color/dimmedColor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/poster_image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/dummy_date" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:fontFamily="@font/product_sans_bold"
+            android:textColor="@color/colorText"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/poster_image"
+            app:layout_constraintTop_toBottomOf="@+id/date_text"
+            tools:text="Content Title" />
+
+        <RatingBar
+            android:id="@+id/item_rating_bar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:progressBackgroundTint="@color/dimmedColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/poster_image"
+            app:layout_constraintTop_toBottomOf="@+id/title_text"
+            tools:rating="3.5" />
+
+        <ImageView
+            android:id="@+id/rating_source_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:src="@drawable/ic_rating_source"
+            app:layout_constraintStart_toEndOf="@+id/poster_image"
+            app:layout_constraintTop_toBottomOf="@+id/item_rating_bar"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/rating_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:fontFamily="@font/product_sans_bold"
+            android:textColor="@color/greenLight"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rating_source_image"
+            app:layout_constraintStart_toEndOf="@+id/rating_source_image"
+            app:layout_constraintTop_toTopOf="@+id/rating_source_image"
+            tools:text="@string/dummy_rating" />
+
+        <ImageView
+            android:id="@+id/popularity_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_popular"
+            app:layout_constraintBottom_toBottomOf="@+id/rating_text"
+            app:layout_constraintStart_toEndOf="@+id/rating_text"
+            app:layout_constraintTop_toTopOf="@+id/rating_text"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/popularity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_margin"
+            android:fontFamily="@font/product_sans_regular"
+            android:textColor="@color/dimmedColor"
+            app:layout_constraintBottom_toBottomOf="@+id/popularity_image"
+            app:layout_constraintStart_toEndOf="@+id/popularity_image"
+            app:layout_constraintTop_toTopOf="@+id/popularity_image"
+            tools:text="@string/dummy_popularity" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
